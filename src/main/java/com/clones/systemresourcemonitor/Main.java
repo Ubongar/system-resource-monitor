@@ -6,8 +6,8 @@ public class Main {
         System.out.println("------------------------");
 
         System.out.println("CPU Load: " + ResourceMonitor.getCpuLoad());
-        System.out.println("Free Memory: " + ResourceMonitor.getFreeMemory() + " bytes");
-        System.out.println("Total Memory: " + ResourceMonitor.getTotalMemory() + " bytes");
-        System.out.println("Free Disk Space: " + ResourceMonitor.getDiskSpace() + " bytes");
+        System.out.println("Free Memory: " + ResourceMonitor.formatBytes(ResourceMonitor.getFreeMemory()));
+        System.out.println("Total Memory: " + ResourceMonitor.formatBytes(ResourceMonitor.getTotalMemory()));
+        System.out.println("Free Disk Space: " + ResourceMonitor.formatBytes(ResourceMonitor.getDiskSpace()));
     }
 }
